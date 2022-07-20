@@ -1,0 +1,16 @@
+[package]
+edition = "2021"
+name = "app-scraper"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "0.15.0"
+html_parser = "0.6.3"
+lettre = "0.10.0"
+redis = "0.21.5"
+reqwest = {version = "0.11.11", features = ["json", "blocking"]}
+scraper = {version = "0.13.0", features=["deterministic"]}
+substring = "1.4.5"
+tokio = {version = "1.19.2", features = ["full"]}
